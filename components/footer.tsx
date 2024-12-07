@@ -15,7 +15,7 @@ function footer() {
           <div className="w-full md:w-1/5	flex flex-col justify-center h-80  p-10">
             <h2 className="font-bold leading-6 text-2xl mt-6 md:mt-0">Exclusive</h2>
             <h3 className="font-medium leading-7 text-xl mt-6">Subscribe</h3>
-            <p className=" mt-6">Get 10% off your first order</p>
+            <p className="mt-6">Get 10% off your first order</p>
             <div className="flex">
               <input
                 type="text"

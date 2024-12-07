@@ -34,12 +34,12 @@ function header() {
 
       <div className="w-full flex flex-col md:flex-row border-b-2">
         <div className="w-full md:w-2/3 flex flex-col md:flex-row justify-between p-8 md:p-16">
-          <h2 className="font-bold leading-6 text-2xl w-1/2">Exclusive</h2>
+          <h2 className="font-bold leading-6 text-2xl w-1/2"><Link href="/">Exclusive</Link></h2>
           <div className="w-full flex flex-col md:flex-row justify-center items-center md:justify-around">
-            <Link href="">Home</Link>
-            <Link href="">Contact</Link>
-            <Link href="">About</Link>
-            <Link href="">Shop</Link>
+            <Link href="/">Home</Link>
+            <Link href="contact">Contact</Link>
+            <Link href="about">About</Link>
+            <Link href="shop">Shop</Link>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ function header() {
             <FaRegHeart className="w-5 h-5 md:mt-16" />
           </Link>
 
-          <Link href="">
+          <Link href="cart">
             <FiShoppingCart className="w-5 h-5 md:mt-16" />
           </Link>
         </div>

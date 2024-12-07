@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { IoIosSearch } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
@@ -33,7 +32,7 @@ function header() {
         </select>
       </nav>
 
-      <div className="w-full flex flex-col md:flex-row">
+      <div className="w-full flex flex-col md:flex-row border-b-2">
         <div className="w-full md:w-2/3 flex flex-col md:flex-row justify-between p-8 md:p-16">
           <h2 className="font-bold leading-6 text-2xl w-1/2">Exclusive</h2>
           <div className="w-full flex flex-col md:flex-row justify-center items-center md:justify-around">
@@ -51,9 +50,9 @@ function header() {
               name="search"
               placeholder="What are you looking for ?"
               id=""
-              className="h-10 mt-14"
+              className="h-10 md:mt-14"
             />
-            <IoIosSearch className="w-6 h-6 mt-16" />
+            <IoIosSearch className="w-6 h-6 md:mt-16" />
           </div>
           <Link href="wishlist">
             <FaRegHeart className="w-5 h-5 md:mt-16" />
@@ -64,13 +63,6 @@ function header() {
           </Link>
         </div>
       </div>
-      <Image
-        src={"/images/Line 3.png"}
-        alt="divider-line"
-        width={100}
-        height={100}
-        className="w-full mt-6 md:mt-[-20px]"
-      />
     </>
   );
 }
